@@ -1,0 +1,160 @@
+@include breakpoint(0, $mobile) {
+    #about {
+        background-color: $cream;
+        height: 90%;
+
+        .button-padding {
+            padding-left: 17px;
+            padding-top: 15px;
+        }
+
+
+        img {
+            padding-top: 60px;
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        .super-headline {
+            padding-top: 21px;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding-left: 17px;
+            font-family: 'Source Sans Pro SemiBold';
+        }
+
+        h2 {
+            font-size: 28px;
+            color: $primary;
+            padding-left: 17px;
+            font-family: 'Source Sans Pro Light';
+            padding-bottom: 22px;
+            line-height: 1.5;
+        }
+
+        .text {
+            margin: 0 0px 30px 0px;
+            font-family: 'Source Sans Pro Light';
+            color: #363636;
+            line-height: 1.5;
+        }
+
+        .button-padding {
+            padding-bottom: 40px;
+        }
+
+        a {
+            font-size: 16px;
+            font-family: 'Source Sans Pro SemiBold';
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            border: $secondary;
+            border-style: solid;
+            border-width: 1px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            box-shadow: none;
+            text-decoration: none;
+            padding-left: 24px;
+            padding-right: 24px;
+            height: 100%;
+        }
+
+        a:hover {
+            background-color: $secondary;
+            border-width: 2px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+    }
+}
+
+@include breakpoint($desktop, $max-width) {
+#about {
+    background-color: $cream;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 120px 0px;
+    .button-padding {
+        padding-left: 17px;
+        padding-top: 15px;
+    }
+
+
+    img {
+        
+        margin: 0px 36px;
+        width: 45%;
+        object-fit: cover;
+        position: relative;
+        min-width: 500px;
+        
+    }
+
+    .aboutflex {
+        min-width: 500px;
+        width: 45%;
+        padding: 0px 20px;
+        margin-right: 16px;
+        height: 100%;
+    }
+
+    .super-headline {
+        
+        text-transform: uppercase;
+        font-size: 22px;
+        padding-top: 20px;
+        font-family: 'Source Sans Pro SemiBold';
+    }
+
+    h2 {
+        font-size: 68px;
+        color: $primary;
+        
+        font-family: 'Source Sans Pro Light';
+        padding-bottom: 22px;
+        
+    }
+
+    .text {
+        margin: 0 0px 30px 0px;
+        font-family: 'Source Sans Pro Light';
+        font-size: 22px;
+        color: #363636;
+        line-height: 2;
+    }
+
+    .button-padding {
+        padding-bottom: 40px;
+        padding-left: 0;
+    }
+
+    a {
+        font-size: 22px;
+        font-family: 'Source Sans Pro SemiBold';
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        border: $secondary;
+        border-style: solid;
+        border-width: 2px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        box-shadow: none;
+        text-decoration: none;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    a:hover {
+        background-color: $secondary;
+        border-width: 2px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+}
+}

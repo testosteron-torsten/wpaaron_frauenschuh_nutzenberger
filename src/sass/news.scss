@@ -1,0 +1,155 @@
+@include breakpoint(0, $mobile) {
+    #news {
+
+
+        .super-headline {
+            padding-top: 60px;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding-left: 17px;
+            font-family: 'Source Sans Pro SemiBold';
+        }
+
+        h2 {
+            font-size: 28px;
+            color: $primary;
+            padding-left: 17px;
+            padding-bottom: 12px;
+            font-family: 'Source Sans Pro Light';
+            line-height: 1.5;
+        }
+
+
+
+
+
+        article {
+
+            width: 100vw;
+            height: 100%;
+            background-color: $newsbackground;
+            padding-bottom: 60px;
+            margin-bottom: 60px;
+
+            .newsflex {
+                overflow: visible;
+            }
+
+
+            img {
+
+                width: 100%;
+                object-fit: cover;
+
+            }
+
+            h3 {
+                font-size: 22px;
+                color: $primary;
+                padding: 17px;
+                font-family: 'Source Sans Pro Light';
+            }
+
+            p {
+                font-size: 16px;
+                font-family: 'Source Sans Pro Light';
+                margin: 20px 0;
+                line-height: 1.5;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000000;
+                text-transform: uppercase;
+                font-size: 16px;
+                border: 1px solid $secondary;
+                padding: 10px;
+                font-family: 'Source Sans Pro SemiBold';
+                margin-left: 17px;
+            }
+
+            a:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+}
+
+@include breakpoint($desktop, $max-width) {
+    #news {
+
+
+        .super-headline {
+            padding-top: 120px;
+            text-transform: uppercase;
+            font-size: 22px;
+            padding-left: 36px;
+            font-family: 'Source Sans Pro SemiBold';
+        }
+
+        h2 {
+            font-size: 68px;
+            color: $primary;
+            padding-left: 36px;
+            padding-bottom: 30px;
+            font-family: 'Source Sans Pro Light';
+        }
+
+        .newsflex {
+            display: flex;
+            flex-direction: row;
+            overflow-x: scroll;
+            position: relative;
+            left: 0;
+            margin-left: 20px;
+        }
+
+
+
+        article {
+            min-width: 600px;
+            width: 30vw;
+            height: 100%;
+            background-color: $newsbackground;
+            padding-bottom: 60px;
+            margin: 0px 20px;
+            margin-bottom: 60px;
+
+            img {
+
+                width: 100%;
+                object-fit: cover;
+                height: 300px;
+            }
+
+            h3 {
+                font-size: 38px;
+                color: $primary;
+                padding: 17px;
+                font-family: 'Source Sans Pro Light';
+            }
+
+            p {
+                font-size: 22px;
+                font-family: 'Source Sans Pro Light';
+                margin: 25px 25px;
+                line-height: 1.5;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000000;
+                text-transform: uppercase;
+                font-size: 22px;
+                border: 1px solid $secondary;
+                padding: 10px;
+                font-family: 'Source Sans Pro SemiBold';
+                margin-left: 25px;
+            }
+
+            a:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+}

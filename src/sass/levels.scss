@@ -1,0 +1,752 @@
+@include breakpoint(0, $mobile) {
+
+    main {
+
+        h1,
+        h2,
+        h3,
+        p {
+            padding-left: 17px;
+            padding-right: 17px;
+        }
+    }
+
+    .level {
+        background-color: $bg;
+
+        .button-padding {
+            padding-left: 17px;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-family: 'Source Sans Pro Light';
+            color: $secondary;
+            padding-top: 0px;
+        }
+
+        p {
+            padding-top: 20px;
+            font-size: 16px;
+            font-family: 'Source Sans Pro ExtraLight';
+            font-weight: 100;
+            color: white;
+            padding-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        a {
+            font-size: 16px;
+            font-family: 'Source Sans Pro SemiBold';
+            color: white;
+            text-transform: uppercase;
+            border: $secondary;
+            border-style: solid;
+            border-width: 1px;
+            padding: 12px;
+            box-shadow: none;
+            text-decoration: none;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        a:hover {
+            background-color: $secondary;
+            border-width: 2px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .svg {
+            padding-top: 40px;
+            max-width: 68px;
+        }
+
+        blockquote {
+            font-family: 'Source Sans Pro ExtraLight';
+            color: white;
+            font-size: 22px;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        .blockquote {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .icon {
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        border-style: solid;
+        background: $icons;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
+        img {
+
+            max-width: 67px;
+            opacity: 75%;
+        }
+    }
+
+    .number {
+        position: relative;
+        bottom: 10px;
+        left: 140px;
+        font-family: 'Source Sans Pro SemiBold';
+        color: $primary;
+        font-size: 28px;
+        border-style: solid;
+        background-color: #D5D5D5;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        z-index: 0;
+        line-height: 45px;
+    }
+
+    #workshops {
+        display: grid;
+        height: 2024px;
+        width: 100vw;
+        grid-template-columns: 90vw 10vw;
+        grid-template-rows: 200px 521px 87px 521px 87px 521px 87px;
+        grid-template-areas:
+            "text-levels text-levels"
+            "level1 apply"
+            "empty1 empty1"
+            "level2 register1"
+            "empty2 empty2"
+            "level3 register2"
+            "empty3 empty3";
+
+        .blockquote-deskt {
+            display: none;
+        }
+
+        .number-deskt {
+            display: none;
+        }
+    }
+
+    .apply {
+        grid-area: apply;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        display: flex;
+        justify-content: center;
+        font-family: 'Source Sans Pro ExtraLight';
+        font-size: 20px;
+        color: #1A1A1A;
+        background-color: #F7F7F7;
+
+        p {
+            align-self: center;
+        }
+    }
+
+    .register1 {
+        grid-area: register1;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        display: flex;
+        justify-content: center;
+        font-family: 'Source Sans Pro ExtraLight';
+        font-size: 20px;
+        color: #1A1A1A;
+        background-color: #F7F7F7;
+
+        p {
+            align-self: center;
+        }
+    }
+
+    .register2 {
+        grid-area: register2;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        display: flex;
+        justify-content: center;
+        font-family: 'Source Sans Pro ExtraLight';
+        font-size: 20px;
+        color: #1A1A1A;
+        background-color: #F7F7F7;
+
+        p {
+            align-self: center;
+        }
+    }
+
+    .text-levels {
+        grid-area: text-levels;
+        padding-top: 30px;
+
+
+
+        .super-headline {
+            font-family: 'Source Sans Pro SemiBold';
+            font-size: 16px;
+            color: $bg;
+            text-transform: uppercase;
+
+
+        }
+
+        h2 {
+            font-family: 'Source Sans Pro Light';
+            font-size: 28px;
+            color: $primary;
+            padding-bottom: 40px;
+
+        }
+    }
+
+    .level1 {
+
+        grid-area: level1;
+        background-color: $bg;
+
+
+    }
+
+    .level2 {
+        grid-area: level2;
+
+        background-color: $bg;
+
+
+    }
+
+    .level3 {
+        grid-area: level3;
+
+        background-color: $bg;
+
+    }
+
+    .iconsection {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 50px;
+    }
+
+}
+
+@include breakpoint($desktop, $max-width) {
+    #workshops {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        display: grid;
+        height: 98rem;
+        width: 96vw;
+        grid-template-columns: 76vw 15vw;
+        grid-template-rows: 20rem 22rem 22rem 22rem 10rem;
+        column-gap: 2vw;
+        row-gap: 2rem;
+        grid-template-areas:
+            "text-levels text-levels"
+            "level1 apply"
+            "level2 register1"
+            "level3 register1"
+            "empty1 empty1"
+
+    }
+
+    .apply {
+        grid-area: apply;
+        background-color: #F7F7F7;
+        font-family: 'Source Sans Pro ExtraLight';
+        color: $bg;
+        font-size: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 45px;
+    }
+
+    .text-levels {
+        grid-area: text-levels;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .super-headline {
+            font-family: 'Source Sans Pro Light';
+            color: $bg;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-family: 'Source Sans Pro ExtraLight';
+            color: $primary;
+            font-size: 68px;
+
+        }
+
+    }
+
+    .register1 {
+        grid-area: register1;
+        background-color: #F7F7F7;
+        font-family: 'Source Sans Pro ExtraLight';
+        color: $bg;
+        font-size: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 45px;
+    }
+
+    .level1 {
+        grid-area: level1;
+        display: grid;
+        height: 22rem;
+
+        grid-template-columns: 1fr 4fr 3fr 2fr;
+        grid-template-rows: 22rem;
+        grid-template-areas:
+            "number level-text icon-grid blockq";
+
+        .number {
+            display: none;
+        }
+
+        .number-deskt {
+            grid-area: number;
+            font-size: 300px;
+
+
+            .number2 {
+                position: relative;
+                left: 20px;
+                bottom: 62px;
+                font-family: 'Source Sans Pro SemiBold';
+                color: $bg;
+            }
+        }
+
+
+        .level-text {
+            grid-area: level-text;
+            background-color: $bg;
+            padding-left: 30px;
+            padding-top: 30px;
+            height: 22rem;
+
+            h3 {
+                font-family: 'Source Sans Pro ExtraLight';
+                color: $secondary;
+                font-size: 4vh;
+            }
+
+            p {
+                font-family: 'Source Sans Pro ExtraLight';
+                color: white;
+                padding-top: 2vh;
+                font-size: 2vh;
+                line-height: 1.5;
+            }
+
+            .button {
+                font-family: 'Source Sans Pro SemiBold';
+                text-decoration: none;
+                color: white;
+                font-size: 2.3vh;
+                text-transform: uppercase;
+                border-style: solid;
+                border-width: 2px;
+                border-color: $secondary;
+                padding: 7px;
+                padding-left: 25px;
+                padding-right: 25px;
+                box-shadow: none;
+
+
+            }
+
+            .button:hover {
+                font-family: 'Source Sans Pro SemiBold';
+                text-decoration: none;
+                color: white;
+                font-size: 2.3vh;
+                text-transform: uppercase;
+                border-style: solid;
+                border-width: 2px;
+                border-color: $secondary;
+                padding: 7px;
+                padding-left: 25px;
+                padding-right: 25px;
+                box-shadow: none;
+                background-color: $secondary;
+
+            }
+
+            .button-padding {
+                padding-top: 4vh;
+            }
+
+        }
+
+        .iconsection {
+            grid-area: icon-grid;
+            background-color: $bg;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            img {
+                max-height: 22vh;
+                opacity: 75%;
+                border-radius: 50%;
+                background-color: $icons;
+                padding: 4vh;
+            }
+        }
+
+        .blockquote {
+            display: none;
+        }
+
+
+        .blockquote-deskt {
+            grid-area: blockq;
+            background-color: $bg;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 1.3;
+
+
+
+
+            blockquote {
+                font-family: 'Source Sans Pro ExtraLight';
+                color: white;
+                font-size: 4vh;
+                height: 100%;
+                padding-top: 70px;
+            }
+
+
+
+            .svg {
+                max-height: 10vh;
+                align-self: flex-end;
+            }
+        }
+
+    }
+
+
+    .level2 {
+        grid-area: level2;
+        display: grid;
+        height: 22rem;
+
+        grid-template-columns: 1fr 2fr 3fr 4fr;
+        grid-template-rows: 22rem;
+        grid-template-areas:
+            "number blockq icon-grid level-text";
+
+        .number {
+            display: none;
+        }
+
+        .number-deskt {
+            grid-area: number;
+            font-size: 300px;
+            display: flex;
+
+
+            .number2 {
+                position: relative;
+                left: 20px;
+                font-family: 'Source Sans Pro SemiBold';
+                color: $bg;
+                align-self: center;
+            }
+        }
+
+
+        .level-text {
+            grid-area: level-text;
+            background-color: $bg;
+            padding-right: 30px;
+            padding-top: 30px;
+            height: 22rem;
+
+            h3 {
+                font-family: 'Source Sans Pro ExtraLight';
+                color: $secondary;
+                font-size: 4vh;
+            }
+
+            p {
+                font-family: 'Source Sans Pro ExtraLight';
+                color: white;
+                padding-top: 2vh;
+                font-size: 2vh;
+                line-height: 1.5;
+            }
+
+
+            .button {
+                font-family: 'Source Sans Pro SemiBold';
+                text-decoration: none;
+                color: white;
+                font-size: 2.3vh;
+                text-transform: uppercase;
+                border-style: solid;
+                border-width: 2px;
+                border-color: $secondary;
+                padding: 7px;
+                padding-left: 25px;
+                padding-right: 25px;
+                box-shadow: none;
+
+
+            }
+
+            .button:hover {
+                font-family: 'Source Sans Pro SemiBold';
+                text-decoration: none;
+                color: white;
+                font-size: 2.3vh;
+                text-transform: uppercase;
+                border-style: solid;
+                border-width: 2px;
+                border-color: $secondary;
+                padding: 7px;
+                padding-left: 25px;
+                padding-right: 25px;
+                box-shadow: none;
+                background-color: $secondary;
+
+            }
+
+            .button-padding {
+                padding-top: 4vh;
+            }
+
+        }
+
+        .iconsection {
+            grid-area: icon-grid;
+            background-color: $bg;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            img {
+                max-height: 22vh;
+                opacity: 75%;
+                border-radius: 50%;
+                background-color: $icons;
+                padding: 4vh;
+            }
+        }
+
+        .blockquote {
+            display: none;
+        }
+
+
+        .blockquote-deskt {
+            grid-area: blockq;
+            background-color: $bg;
+            padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+
+
+
+
+
+            blockquote {
+                font-family: 'Source Sans Pro ExtraLight';
+                color: white;
+                font-size: 4vh;
+                height: 100%;
+                line-height: 1.3;
+                position: relative;
+                bottom: 40px;
+
+            }
+
+
+
+            .svg {
+                max-height: 10vh;
+                align-self: flex-end;
+            }
+        }
+
+    }
+
+
+
+    .level3 {
+        grid-area: level3;
+        display: grid;
+        height: 22rem;
+
+        grid-template-columns: 1fr 3fr 4fr 2fr;
+        grid-template-rows: 22rem;
+        grid-template-areas:
+            "number icon-grid level-text  blockq";
+
+        .number {
+            display: none;
+        }
+
+        .number-deskt {
+            grid-area: number;
+            font-size: 300px;
+            display: flex;
+            align-items: flex-end;
+
+
+
+            .number2 {
+                position: relative;
+                left: 20px;
+                top: 43.5px;
+                font-family: 'Source Sans Pro SemiBold';
+                color: $bg;
+
+            }
+        }
+
+        .level-text {
+            grid-area: level-text;
+            background-color: $bg;
+            padding-top: 30px;
+            height: 22rem;
+
+            h3 {
+                font-family: 'Source Sans Pro ExtraLight';
+                color: $secondary;
+                font-size: 4vh;
+            }
+
+            p {
+                font-family: 'Source Sans Pro ExtraLight';
+                color: white;
+                padding-top: 2vh;
+                font-size: 2vh;
+                line-height: 1.5;
+            }
+
+
+            .button {
+                font-family: 'Source Sans Pro SemiBold';
+                text-decoration: none;
+                color: white;
+                font-size: 2.3vh;
+                text-transform: uppercase;
+                border-style: solid;
+                border-width: 2px;
+                border-color: $secondary;
+                padding: 7px;
+                padding-left: 25px;
+                padding-right: 25px;
+                box-shadow: none;
+
+
+            }
+
+            .button:hover {
+                font-family: 'Source Sans Pro SemiBold';
+                text-decoration: none;
+                color: white;
+                font-size: 2.3vh;
+                text-transform: uppercase;
+                border-style: solid;
+                border-width: 2px;
+                border-color: $secondary;
+                padding: 7px;
+                padding-left: 25px;
+                padding-right: 25px;
+                box-shadow: none;
+                background-color: $secondary;
+
+            }
+
+            .button-padding {
+                padding-top: 4vh;
+            }
+
+        }
+
+        .iconsection {
+            grid-area: icon-grid;
+            background-color: $bg;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            img {
+                max-height: 22vh;
+                opacity: 75%;
+                border-radius: 50%;
+                background-color: $icons;
+                padding: 4vh;
+            }
+        }
+
+        .blockquote {
+            display: none;
+        }
+
+
+        .blockquote-deskt {
+            grid-area: blockq;
+            background-color: $bg;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+
+
+
+
+            blockquote {
+                font-family: 'Source Sans Pro ExtraLight';
+                color: white;
+                font-size: 4vh;
+                height: 100%;
+                line-height: 1.3;
+                padding-top: 30px;
+            }
+
+
+
+            .svg {
+                max-height: 10vh;
+                align-self: flex-end;
+            }
+        }
+
+    }
+
+
+    .register2 {
+        display: none;
+
+    }
+}

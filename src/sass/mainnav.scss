@@ -1,0 +1,106 @@
+@include breakpoint(0, $mobile) {
+    #mainnav {
+        position: fixed;
+        right: 0;
+        top: 0;
+
+    }
+}
+
+@include breakpoint($desktop, $max-width) {
+    header {
+        min-height: 700px;
+        height: 42vw;
+        width: 100%;
+        background-image: url("../images/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        background-color: #000;
+
+        a {
+            text-decoration: none;
+
+            h1 {
+                padding-left: 36px;
+                padding-top: 40px;
+                font-size: 22px;
+                color: #ffffff;
+                font-family: 'Source Sans Pro Light';
+
+                span {
+                    text-transform: uppercase;
+                    font-family: 'Source Sans Pro SemiBold';
+                }
+            }
+        }
+
+        h2 {
+            color: $primary;
+            font-size: 68px;
+            margin-left: 100px;
+            margin-top: 240px;
+            margin-bottom: 30px;
+            font-family: 'Source Sans Pro ExtraLight';
+            padding-bottom: 30px;
+
+            br {
+                display: none;
+            }
+        }
+
+        .button {
+            font-size: 26px;
+            color: #ffffff;
+            border: 1px solid $primary;
+            padding: 13px;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-transform: uppercase;
+            margin-left: 100px;
+            font-family: 'Source Sans Pro SemiBold';
+        }
+
+        .button:hover {
+            background-color: $primary;
+        }
+    }
+
+    #mainnav {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 350px;
+        background-color: #363636;
+
+        button {
+            display: none;
+        }
+
+        ul {
+            position: absolute;
+            display: flex;
+            padding-top: 40px;
+            top: 0;
+            right: 0;
+            width: 100%;
+            font-family: "Source Sans Pro Light";
+            font-size: 22px;
+
+            a {
+                color: $secondary;
+                text-transform: uppercase;
+                list-style-type: none;
+                white-space: nowrap;
+                border-bottom: 1px solid $secondary;
+                margin-left: 10px;
+                margin-right: 10px;
+
+                &:hover {
+                    color: $primary;
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+}
