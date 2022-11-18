@@ -3,7 +3,7 @@
 <?php wp_body_open(); ?>
     <header>
         <a href="/">
-            <h1><span>Aarrrron G. Miller</span> | Choreographer</h1>
+            <h1><span>Aaron G. Miller</span> | Choreographer</h1>
         </a>
         <nav id="mainnav">
             <button id="hamburger" class="closed">
@@ -36,7 +36,7 @@
                     <span class="number">3</span>
 
                     <div class="icon">
-                        <img src="<?php echo get_template_directory_uri() ?>./images/icons/icon3.png"
+                        <img src="<?php echo get_template_directory_uri() ?>/images/icons/icon3.png"
                             alt='Icon showing dancer stretching her leg up to her nose.'>
 
                         
@@ -56,14 +56,14 @@
                     </div>
                     <div class="blockquote">
 
-                        <img class="svg" src="<?php echo get_template_directory_uri() ?>./images/svg/quote.svg" alt='quote sign'>
+                        <img class="svg" src="<?php echo get_template_directory_uri() ?>/images/svg/quote.svg" alt='quote sign'>
                         <blockquote>Respect your talent!</blockquote>
                     </div>
                 </div>
                 <div class="blockquote-deskt">
                     <blockquote>Respect your<br> talent!</blockquote>
 
-                    <img class="svg" src="<?php echo get_template_directory_uri() ?>./images/svg/quote.svg" alt='quote sign'>
+                    <img class="svg" src="<?php echo get_template_directory_uri() ?>/images/svg/quote.svg" alt='quote sign'>
 
                 </div>
             </div>
@@ -78,7 +78,7 @@
                     <span class="number">2</span>
 
                     <div class="icon">
-                        <img src="<?php echo get_template_directory_uri() ?>./images/icons/icon2.png"
+                        <img src="<?php echo get_template_directory_uri() ?>/images/icons/icon2.png"
                             alt='Icon showing dancer stretching her leg up to her nose.'>
 
                     </div>
@@ -96,7 +96,7 @@
                     </div>
                     <div class="blockquote">
 
-                        <img class="svg" src="<?php echo get_template_directory_uri() ?>./images/svg/quote.svg" alt='quote sign'>
+                        <img class="svg" src="<?php echo get_template_directory_uri() ?>/images/svg/quote.svg" alt='quote sign'>
                         <blockquote>Thank
                             yourself for
                             levelling up
@@ -104,7 +104,7 @@
                     </div>
                 </div>
                 <div class="blockquote-deskt">
-                    <img class="svg" src="<?php echo get_template_directory_uri() ?>./images/svg/quote.svg" alt='quote sign'>
+                    <img class="svg" src="<?php echo get_template_directory_uri() ?>/images/svg/quote.svg" alt='quote sign'>
                     <blockquote><br>Thank yourself<br> for leveling up<br>now!</blockquote>
 
 
@@ -122,7 +122,7 @@
                     <span class="number">1</span>
 
                     <div class="icon">
-                        <img src="<?php echo get_template_directory_uri() ?>./images/icons/icon1.png"
+                        <img src="<?php echo get_template_directory_uri() ?>/images/icons/icon1.png"
                             alt='Icon showing dancer stretching her leg up to her nose.'>
 
                     </div>
@@ -140,13 +140,13 @@
                     </div>
                     <div class="blockquote">
 
-                        <img class="svg" src="<?php echo get_template_directory_uri() ?>./images/svg/quote.svg" alt='quote sign'>
+                        <img class="svg" src="<?php echo get_template_directory_uri() ?>/images/svg/quote.svg" alt='quote sign'>
                         <blockquote>Fall in love
                             with dancing!</blockquote>
                     </div>
                 </div>
                 <div class="blockquote-deskt">
-                    <img class="svg" src="<?php echo get_template_directory_uri() ?>./images/svg/quote.svg" alt='quote sign'>
+                    <img class="svg" src="<?php echo get_template_directory_uri() ?>/images/svg/quote.svg" alt='quote sign'>
                     <blockquote>Fall in love with<br> dancing!</blockquote>
 
 
@@ -160,7 +160,7 @@
         <section id="about">
 
 
-            <img src="<?php echo get_template_directory_uri() ?>./images/about.jpg" alt="Photo of Aaron" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/about.jpg" alt="Photo of Aaron" />
 
             <div class="aboutflex">
                 <p class="super-headline">Why I teach</p>
@@ -187,7 +187,7 @@
             <div class="newsflex">
                 <article>
                     <h3>Sydney Dance Festival 2022</h3>
-                    <img src="<?php echo get_template_directory_uri() ?>./images/news/news1.jpg" alt="Aaron performing at the Sydney dance festival 2022">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/news/news1.jpg" alt="Aaron performing at the Sydney dance festival 2022">
                     <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                         sed diam nonumy eirmod tempor invidunt ut labore et
@@ -204,7 +204,7 @@
 
                 <article>
                     <h3>"Dance Pool" 2023 sold out!</h3>
-                    <img src="<?php echo get_template_directory_uri() ?>./images/news/news2.jpg" alt="Group picture of 'Dance Pool'">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/news/news2.jpg" alt="Group picture of 'Dance Pool'">
                     <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                         sed diam nonumy eirmod tempor invidunt ut labore et
@@ -218,7 +218,7 @@
 
                 <article>
                     <h3>New London Workshop Oct. 2025</h3>
-                    <img src="<?php echo get_template_directory_uri() ?>./images/news/news3.jpg" alt="Aaron at a workshop">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/news/news3.jpg" alt="Aaron at a workshop">
                     <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                         sed diam nonumy eirmod tempor invidunt ut labore et
