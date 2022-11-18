@@ -3,7 +3,7 @@
 <?php wp_body_open(); ?>
     <header>
         <a href="/">
-            <h1><span>Aaron G. Miller</span> | Choreographer</h1>
+            <h1><span>Aarrrron G. Miller</span> | Choreographer</h1>
         </a>
         <nav id="mainnav">
             <button id="hamburger" class="closed">
