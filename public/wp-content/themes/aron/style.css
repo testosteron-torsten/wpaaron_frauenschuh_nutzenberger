@@ -149,7 +149,7 @@ table {
     min-height: 700px;
     height: 42vw;
     width: 100%;
-    background-image: url("../images/hero.jpg");
+    background-image: url("./images/hero.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
